@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs") %>
+<div id="container">
+   <div class="searchBox" id="Search">
+    <form action="/word" method="post">
+        <input type="text" name="word" placeholder="Enter a word">
+        <button type="submit">Search</button>
+    </form>
+    </div> 
+<div id="meaning">
+    <% if (locals.SearchedWord) { %>
+     <h2> <%= SearchedWord.word %></h2>
+     
+     
+     <% SearchedWord.meanings.forEach(function(meaning) { %>
+        <h2 class="sentence"><%= meaning.partOfSpeech %></h2>
+
+        <% meaning.definitions.forEach(function(definition) { %>
+            <p class="sentence"><strong>Definition:</strong> <%= definition.definition %></p>
+            <p class="sentence"><strong>Example:</strong> <%= definition.example %></p>
+            
+            
+        <% }); %>
+<br class="line">
+    <% });%>
+
+    <% }; if (locals.error) {%>
+    <%= console.log(error.message) %>
+    <div>
+        <h2>This word cannot be found</h2>
+    </div>
+     
+    <% }  %>
+</div>
+</div>
+</html>

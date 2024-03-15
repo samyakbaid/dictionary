@@ -1,0 +1,70 @@
+html{
+    background-color: cornflowerblue;
+}
+#container{
+    display: flex ;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 10%;
+    row-gap: 20px;
+    background-color: cornflowerblue;
+    
+   
+    
+}
+
+#meaning{
+    display: flex;
+    
+    background-color: azure;
+    flex-direction: column;
+    align-items: center;
+width: 60%;
+height: max-content;
+padding: 30px;
+border: 5px solid black ;
+ 
+}
+
+#Search{
+    
+    height: 50 px ;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+
+
+}
+.sentence{
+   margin-top: 5px;
+   margin-bottom: 5px; 
+}
+
+.line{
+    z-index: 1;
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.header{
+    height: max-content;
+    width: 100vw;
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lobster', sans-serif;
+    background-color: cornflowerblue;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.title{
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lobster', sans-serif;
+    font-size: 5rem;
+
+}
